@@ -5,7 +5,7 @@ A lightweight Python MVP for scraping business data using the Google Places API.
 ## Features
 
 - 🔍 Search for places by type and location
-- 📄 Handle API pagination (up to 60 results per search)
+- 📄 Handle API pagination (Google Places API provides maximum 60 results per search via automatic pagination)
 - 📊 Extract detailed place information including:
   - Name and address
   - Coordinates (latitude/longitude)
@@ -133,6 +133,7 @@ The scraper handles common API errors:
 - Google Places API has usage quotas and billing
 - Text Search: $32 per 1000 requests
 - Place Details: $17 per 1000 requests
+- **Result Limits**: Google Places API returns maximum 60 results per search query through automatic pagination (20 results per page × up to 3 pages)
 - The scraper includes delays to respect rate limits
 - Monitor your usage in the Google Cloud Console
 
